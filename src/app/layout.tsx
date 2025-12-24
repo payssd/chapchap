@@ -26,12 +26,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "ChapChap - Get Paid Chapchap",
-  description: "Automated payment reminders for East African businesses. Send invoices, get paid via M-Pesa & cards, and never chase a payment again.",
-  keywords: ["invoicing", "payment reminders", "East Africa", "M-Pesa", "Paystack", "SME"],
+  description: "Automated payment reminders for businesses worldwide. Send invoices, get paid via M-Pesa & cards, and never chase a payment again.",
+  keywords: ["invoicing", "payment reminders", "M-Pesa", "Paystack", "SME", "payment collection"],
   authors: [{ name: "ChapChap" }],
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "ChapChap - Get Paid Chapchap",
-    description: "Automated payment reminders for East African businesses",
+    description: "Automated payment reminders for businesses worldwide",
     type: "website",
   },
 };
