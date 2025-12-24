@@ -47,7 +47,7 @@ export function Footer() {
               <span className="text-xl font-display font-bold text-white">ChapChap</span>
             </Link>
             <p className="text-sm text-gray-400 mb-6 max-w-xs">
-              Automated payment reminders for East African businesses. Get paid chapchap,
+              Automated payment reminders for businesses worldwide. Get paid chapchap,
               stress less.
             </p>
             <div className="flex gap-4">
