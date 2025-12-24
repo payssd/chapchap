@@ -72,7 +72,7 @@ const campaignSchema = z.object({
   name: z.string().min(1, "Campaign name is required"),
   filter_status: z.enum(["all", "SENT", "OVERDUE"]),
   message_template: z.string().min(1, "Message template is required"),
-  send_immediately: z.boolean().default(true),
+  send_immediately: z.boolean(),
 });
 
 type CampaignFormValues = z.infer<typeof campaignSchema>;

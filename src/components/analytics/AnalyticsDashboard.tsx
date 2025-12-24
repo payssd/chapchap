@@ -365,7 +365,7 @@ export function AnalyticsDashboard({
                         tickFormatter={(value) => `${(value / 1000).toFixed(0)}k`}
                       />
                       <Tooltip
-                        formatter={(value: number) => [formatCurrency(value), "Revenue"]}
+                        formatter={(value) => [formatCurrency(value as number), "Revenue"]}
                         contentStyle={{
                           backgroundColor: "hsl(var(--card))",
                           border: "1px solid hsl(var(--border))",
@@ -403,7 +403,7 @@ export function AnalyticsDashboard({
                         paddingAngle={2}
                         dataKey="count"
                         nameKey="status"
-                        label={({ status, count }) => `${status}: ${count}`}
+                        label={({ name, value }) => `${name}: ${value}`}
                       >
                         {statusDistribution.map((_, index) => (
                           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -449,7 +449,7 @@ export function AnalyticsDashboard({
                       width={100}
                     />
                     <Tooltip
-                      formatter={(value: number) => [formatCurrency(value), "Revenue"]}
+                      formatter={(value) => [formatCurrency(value as number), "Revenue"]}
                       contentStyle={{
                         backgroundColor: "hsl(var(--card))",
                         border: "1px solid hsl(var(--border))",

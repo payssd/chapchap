@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
     const paymentLink = invoice.paystack_payment_link || `${process.env.NEXT_PUBLIC_APP_URL}/pay/${invoice.id}`;
 
-    let result = { success: false, error: "" };
+    let result: { success: boolean; error?: string } = { success: false };
     let message = "";
 
     const type = reminderType || "EMAIL";
